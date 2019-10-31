@@ -4,6 +4,6 @@ config();
 
 export const Constants = {
 	config: {
-		PORT: process.env.PORT || 4000
+		PORT: Number(process.env.PORT).valueOf() || 4000
 	}
 };
